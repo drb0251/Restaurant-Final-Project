@@ -1,0 +1,1 @@
+Basic HTML file with some CSS. Used all the HTML knowledge I learned in the Codedex HTML course to build the final project. Maybe at some point will add some functionality or at least use this as a baseline to build functional websites for local businesses!
