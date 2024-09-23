@@ -1,0 +1,209 @@
+<!-- final project for HTML - creating a restaurant menu in HTML with a bit 
+of CSS mixed in there as well. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dragon Burgers Palace</title>
+     <style>
+      * {
+        margin: 5px;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: SaddleBrown;
+      }
+
+      li {
+        display: inline;
+      }
+
+      hr {
+        width: 95%;
+        margin: auto;
+        height: 1px;
+        border: 1px solid Maroon;
+        background-color: Maroon;
+        border-radius: 3px;
+      }
+
+      body {
+        background-color: CornSilk;
+      }
+
+      p {
+        word-wrap: break-word;
+        font-size: 18px;
+        background-color: Bisque;
+        border: 2px solid Maroon;
+        border-radius: 10px;
+        padding: 5px;
+      }
+
+      h1 {
+        color: Maroon;
+        text-align: center;
+      }
+      h2 {
+        color: Maroon;
+        text-align: auto;
+      }
+
+      h3 {
+        color: Maroon;
+        text-align: auto;
+           }
+
+      nav {
+        text-align: center;
+        font-size: 20px; 
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      form {
+        font-size: 18px;
+        background-color: Bisque;
+        border: 2px solid Maroon;
+        border-radius: 10px;
+        padding: 5px;
+      }
+
+      textarea {
+        font-size: 18px;
+        padding: 5px;
+        border: solid Maroon;
+        border-radius: 10px;
+        background-color: CornSilk;
+      }
+      input {
+        background-color: CornSilk;
+        font-size: 18px;
+        padding: 5px;
+        border: solid Maroon;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="back_top">
+      <h1>Welcome to Dragon Burgers Palace!</h1>
+      <img 
+            id="header-img" 
+            src="https://mcdonalds.co.nz/sites/mcdonalds.co.nz/files/MCD_Category_FullMenu_2340x640.png" 
+            alt="menu header image"
+            width="500">
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href=#order-form>Place Your Order</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#disclaimers">Disclaimers</a></li>
+        </ul>
+      </nav> 
+    </header>
+    <br><hr><br>
+
+    <main>      
+      <section id="menu">
+        <h2>Menu</h2>
+        <br>
+        <article>
+          <h3>#1 - Double Quarter Pounder</h3> 
+          <img 
+               src="https://mcdonalds.co.nz/sites/mcdonalds.co.nz/files/product-Quarter-Pounder-Double-desktop_1.png" alt="Double Quarter Pounder image"
+               width="200">
+          <p>
+          Satisfy your ultimate hunger. Take two quarter pounds* of 100% NZ beef patties, <br>
+          then complete the tasty picture with cheese, onions, tangy mustard and pickles. <br>
+          Bet your mouth is watering right now. Double Quarter Pounder- delicious, doubled.
+          </p>
+        </article>
+        <br>
+        <article>
+          <h3>#2 - Big Mac</h3> <br>
+          <img 
+               src="https://mcdonalds.co.nz/sites/mcdonalds.co.nz/files/product-Big-Mac-desktop_1.png" 
+               alt="Big Mac image"
+               width="200">
+          <p>
+          Take two 100% beef patties sourced from farmers in regions such as the Taranaki <br> 
+          and Waikato. Add the delicious combination of crisp iceberg lettuce, melting cheese, <br> 
+          onions, and tasty pickles, all framed between a toasted sesame seed bun. And for <br> 
+          the grand finale a generous helping of our famous Big Mac® special sauce!
+          </p>
+        </article>
+        <br>
+        <article>
+          <h3>#3 - Cheeseburger</h3> <br>
+          <img 
+                src="https://mcdonalds.co.nz/sites/mcdonalds.co.nz/files/product-Cheeseburger-desktop_0.png" 
+                alt="Cheeseburger image"
+                width="200">
+          <p>
+          Our legendary cheeseburger is a combo of 100% beef, onions, pickle, ketchup, mustard <br> 
+          and cheese, all in a soft burger bun.
+          </p>
+        </article>
+        <br>
+        <article>
+          <h3>#4 - McChicken</h3> <br>
+          <img 
+                src="https://mcdonalds.co.nz/sites/mcdonalds.co.nz/files/product-McChicken-desktop_0.png" 
+                alt="McChicken image"
+                width="200">
+          <p>
+          Made with New Zealand chicken breast sourced from Ingham's®, in a seasoned tempura <br> 
+          coating. Topped with locally grown crunchy iceberg lettuce and our exceptional <br> 
+          McChicken® sauce, between a sesame seed bun. It's difficult to beat a classic.
+          </p>
+        </article>  
+      </section>
+
+      <br> <hr> <br>
+
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+          <label for="menu_num">Please enter the menu number you'd like: <input type="number" name="menu_item" min="1" max="4" required></label> <br> <br>
+          <label for="sides">Please tick the sides or add-ons you'd like to add:<br>
+            <input type="checkbox"> Potato Chips <br>
+            <input type="checkbox"> Tomato Sauce <br>
+            <input type="checkbox"> Kumara Chips <br>
+            <input type="checkbox"> Salad <br>
+            <input type="checkbox"> Drinks <br>
+            <input type="checkbox"> Hash Brown <br>
+          </label> <br>
+          <label for="requests">Special dietry requirements or other requests: <br><textarea rows="10" cols="50"></textarea></label> <br> <br>
+          <label for="submission">All done? <input type="submit" name="submission" value="Go To Checkout"></label>
+        </form>
+      </section>
+      <br><hr><br>
+      <section id="contact">
+        <h2>Contact us</h2>
+        <article>
+          <p>Phone: <u>0210 6969 6969</u> <br> E-mail: <u>dragon.burgers@healthy.com</u></p>
+        </article>
+        <br><hr><br>
+      </section>
+      <section id="disclaimers">
+        <article>
+          <h3>Disclaimers</h3>
+          <p>We are not liable for bancruptcy.</p> 
+        </article>
+      </section>
+    </main> 
+    <footer>
+      <p>Made with ❤️ by <a href="https://www.codedex.io/@DragonDev">@DragonDev!</a></p>
+      <p>Click here: <a href="#back_top">Back to top of page</a></p>
+    </footer>
+  </body>
